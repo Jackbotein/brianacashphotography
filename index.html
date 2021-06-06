@@ -1,6 +1,10 @@
-  <link rel="stylesheet" href="https://www.jackbotein.com/webdevelopment/fullpage.css">
+<html>
+<head>
+<title>Briana Cash Photography</title>
+<link rel="stylesheet" href="https://www.jackbotein.com/webdevelopment/fullpage.css">
 <script src="https://www.jackbotein.com/webdevelopment/fullpage.js"></script>
-
+</head>
+<body onload="samplecontactform()">
 <div class="header">
 <div class="logo">
 Briana Cash | Photography
@@ -25,11 +29,20 @@ Briana Cash | Photography
     <div class="heading">
    <b>Porfolio</b>
     </div>
-        <div class="slide" data-anchor="slide1"><img src="https://images.unsplash.com/photo-1481349518771-20055b2a7b24?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8cmFuZG9tJTIwb2JqZWN0c3xlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&w=1000&q=80" style="width:70vw;"></div>
-        <div class="slide" data-anchor="slide2"><img src="https://images.unsplash.com/photo-1481349518771-20055b2a7b24?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8cmFuZG9tJTIwb2JqZWN0c3xlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&w=1000&q=80" style="width:70vw;"></div>
-        <div class="slide" data-anchor="slide3"><img src="https://images.unsplash.com/photo-1481349518771-20055b2a7b24?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8cmFuZG9tJTIwb2JqZWN0c3xlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&w=1000&q=80" style="width:70vw;"></div>
+        <div class="slide" data-anchor="slide1"><img src="https://images.unsplash.com/photo-1481349518771-20055b2a7b24?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8cmFuZG9tJTIwb2JqZWN0c3xlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&w=1000&q=80" style="margin-top:100px;height:500px;"></div>
+        <div class="slide" data-anchor="slide2"><img src="https://images.unsplash.com/photo-1481349518771-20055b2a7b24?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8cmFuZG9tJTIwb2JqZWN0c3xlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&w=1000&q=80" style="margin-top:100px;height:500px;"></div>
+        <div class="slide" data-anchor="slide3"><img src="https://images.unsplash.com/photo-1481349518771-20055b2a7b24?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8cmFuZG9tJTIwb2JqZWN0c3xlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&w=1000&q=80" style="margin-top:100px;height:500px;"></div>
     </div>
-    <div class="section">Contact stuff</div>
+    <div class="section">
+     <div class="heading" style="color:black">
+   <b>Contact</b>
+    </div>
+    <div class="spacer" style="height:150px"></div>
+      <div id="feedbackform"></div>
+      <div class="footer">
+      © Copyright 2021 Briana Cash Photography | Website by Jack Botein
+      </div>
+    </div>
 </div>
 
 <style>
@@ -99,11 +112,43 @@ span:hover {
   text-align:center;
 }
 
+.footer {
+  width:100%;
+  position:absolute;
+  bottom:80px;
+  font-size:10px;
+  padding:10px;
+  color:black;
+  background-color:white;
+}
 </style>
 
 <script>
   new fullpage('#fullpage', {
   licenseKey: 'YOUR KEY HERE',
-  sectionsColor: ['white', 'black', '#C0C0C0', '#ADD8E6'],
+  sectionsColor: ['white', 'black', 'white', '#ADD8E6'],
 });
 </script>
+
+ <script>
+  function samplecontactform() {
+  document.getElementById('feedbackform').innerHTML = "<iframe id='gform' src='https://www.jackbotein.com/samplecontactform' style='border:0px #ffffff none;' name='myiFrame' autocomplete='off' scrolling='no' frameborder='1' marginheight='0px' marginwidth='0px' height='690px' width='100%' allowfullscreen></iframe>";
+loadtracker();
+}
+    </script>
+  <script type="text/javascript">
+var load = 0;
+
+function loadtracker() {
+document.getElementById('gform').onload = function() {
+    /*Execute on every reload on iFrame*/
+    load++;
+    if(load > 1){
+        /*Second reload is a submit*/
+        window.location.href = "https://www.jackbotein.com/alanaaronlaw";
+    }
+}
+}
+</script>
+</body>
+</html>
