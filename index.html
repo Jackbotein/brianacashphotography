@@ -21,8 +21,9 @@
 <div id="fullpage">
 
     <div class="section" style="background-image: URL('https://www.invaluable.com/blog/wp-content/uploads/2019/06/hero-5.jpg');background-repeat:no-repeat;width:100%;height:100%;background-size:cover;">
-    <div class="aboutmebackgroundimage">
-    </div>
+    <video autoplay muted loop id="brianavideo">
+  <source src="https://jackbotein.github.io/brianacashphotography/Cranes%20Beach%20-%20Ipswich.mp4" type="video/mp4">
+</video>
     <div class="aboutmetext">
 Hailing from the east coast Briana Cash is mostly known for her work in the music industry, she has also been a photographer as long as she has been a musician. She started shooting black and whites in high school and developed her own film in the school's dark room. She worked in a photo lab developing 35mm film using C-41 processing. Briana has several years of experience in film and digital photography. While attending school at Berklee College of Music she was the photographer for the "The Groove", Berklee's school newspaper. Briana has photographed celebrities, live concerts, landscapes, nature, weddings. She also enjoys flying her drone and traveling to capture shots and live footage from around the world.
     </div>
@@ -100,13 +101,27 @@ span:hover {
   color:silver;
 }
 
+#brianavideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+
 .aboutmetext {
+  position: fixed;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
   font-size: 20px;
   padding:2%;
   width:90%;
   margin-left:3%;
   text-align:left;
-  background-color:rgba(255, 255, 255, .8);
+  background-color:rgba(255, 255, 255, .5);
   border-radius:20px;
   font-family: helvetica, Arial, sans-serif;
 }
