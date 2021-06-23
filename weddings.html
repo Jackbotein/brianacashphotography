@@ -1,15 +1,71 @@
+<html>
+<head>
 <script type="text/javascript" src="https://product-gallery.cloudinary.com/all.js"></script>
-
+</head>
+<body>
+<div class="header">
+<div class="logo">
+<b>BRIANA CASH</b> | PHOTOGRAPHY
+</div>
+<div class="nav">
+<span><a href="https://jackbotein.github.io/brianacashphotography/#1">About</a></span>
+<span><a href="https://jackbotein.github.io/brianacashphotography/#2">Photography</a></span>
+<span><a href="https://jackbotein.github.io/brianacashphotography/#3">Drone Cinematography</a></span>
+<span><a href="https://jackbotein.github.io/brianacashphotography/#4">Other Work</a></span>
+<span><a href="https://jackbotein.github.io/brianacashphotography/#5">Contact</a></span>
+</div>
+</div>
 <div class="heading">Wedding Photography</div>
 <div class="brianacashphotography" id="brianacashphotography"></div>
 
-
 <style>
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
 body {
   width:100%;
-  overflow-x:hidden;
+  background-color:white;
 }
+
+a {
+  text-decoration:none;
+  color:black;
+}
+
+.header {
+  position:fixed;
+  z-index:999;
+  text-align:center;
+  top:0;
+  left:0;
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: white;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size:20px;
+}
+
+.nav {
+  margin-top:20px;
+  margin-bottom:5px;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size:15px;
+}
+
+span {
+  margin-left: 15px;
+  margin-right: 15px;
+  transition-duration:1.5s;
+}
+
+.logo {
+    margin-top:8px;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing:.3em;
+    color:#005196;
+}
+
 .heading {
   color:black;
   position:absolute;
@@ -24,10 +80,12 @@ body {
 .brianacashphotography {
   position:absolute;
   width:100%;
-  top:200px;
+  top:240px;
   right:0px;
   left:0px;
+  background-color:#202020;
 }
+
 </style>
 
 <script>
@@ -67,11 +125,25 @@ const myWidget = cloudinary.galleryWidget({
         "publicId": "sample_zczumy",
         "mediaType": "image"
     }],
+    "themeProps": {
+        "primary": "#202020",
+        "onPrimary": "#202020",
+        "active": "#202020"
+    },
     "displayProps": {
         "mode": "expanded",
         "columns": 3
+    },
+    "aspectRatio": "16:9",
+    "zoomProps": {
+        "trigger": "click",
+        "type": "inline",
+        "viewerPosition": "top",
+        "showLens": true
     },
     "container": "#brianacashphotography"
 });
 myWidget.render();
 </script>
+</body>
+</html>
